@@ -4,6 +4,8 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "dme-react:dev": "turbo dev --filter dme-react",
+    "dme-pcf:dev": "turbo dev --filter dme-pcf",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
