@@ -1,9 +1,11 @@
-import { HelloWorld } from "@signetic/component/src/hello-world";
+import { Button } from "@signetic/component/src/index";
 import './App.css'
 
 function App() {
   return (
-    <HelloWorld />
+    <Button
+      label="Signetic"
+    />
   )
 }
 

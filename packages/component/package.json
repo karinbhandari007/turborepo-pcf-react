@@ -3,24 +3,38 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./src/hello-world": "./src/hello-world.tsx"
+    "./src/index": "./src/index.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
+    "test": "react-scripts test",
     "generate:component": "turbo gen react-component"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "devDependencies": {
     "@signetic/eslint-config": "workspace:*",
     "@signetic/typescript-config": "workspace:*",
     "@turbo/gen": "^1.12.4",
-    "@types/node": "^20.11.24",
     "@types/eslint": "^8.56.5",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
+    "@types/react-test-renderer": "^18.3.0",
     "eslint": "^8.57.0",
+    "react-test-renderer": "^18.3.1",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "react": "^18.2.0"
+    "@testing-library/react": "^16.0.0",
+    "jest": "^29.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1"
   }
 }
